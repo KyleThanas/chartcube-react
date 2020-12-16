@@ -34,5 +34,10 @@ module.exports = app => {
       const { ctx } = this;
       await ctx.renderClient('x6.js', {});
     }
+
+    async ava() {
+      const { ctx } = this;
+      await ctx.renderClient('ava.js', {});
+    }
   };
 };

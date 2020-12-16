@@ -6,6 +6,7 @@ module.exports = {
     chart: 'app/web/page/chart/index.jsx',
     map: 'app/web/page/map/index.jsx',
     x6: 'app/web/page/x6/index.jsx',
+    ava: 'app/web/page/ava/index.jsx',
     admin: 'app/web/page/admin/index.jsx'
   },
   resolve: {
@@ -13,6 +14,12 @@ module.exports = {
       '@asset': path.resolve(__dirname, 'app/web/asset/'),
       '@framework': path.resolve(__dirname, 'app/web/framework/'),
       '@component': path.resolve(__dirname, 'app/web/component/')
+    }
+  },
+  use: {
+    loader: 'babel-loader',
+    options: {
+      plugins: ['@babel/plugin-transform-runtime']
     }
   },
   plugins:[
