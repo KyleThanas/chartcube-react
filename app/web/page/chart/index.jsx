@@ -1,13 +1,13 @@
 import React, {Fragment, Component } from 'react';
-import BarComponent from '../../component/ChartG2/Bar/index'
-import PieComponent from '../../component/ChartG2/Pie/index'
-import TreeComponent from '../../component/ChartG6/Tree/index'
-import LineComponent from '../../component/ChartG2Plot/Line/index'
-import FructhermanComponent from '../../component/ChartG6/Fructherman/index'
-import FishEyeComponent from '../../component/ChartG6/FishEye/index'
-import AppleWatchComponent from '../../component/ChartF2/AppleWatch/index'
-import FunnelComponent from '../../component/ChartF2/Funnel/index'
-import RadarComponent from '../../component/ChartF2/Radar/index'
+import BarComponent from '@component/ChartG2/Bar/index'
+import PieComponent from '@component/ChartG2/Pie/index'
+import TreeComponent from '@component/ChartG6/Tree/index'
+import LineComponent from '@component/ChartG2Plot/Line/index'
+import FructhermanComponent from '@component/ChartG6/Fructherman/index'
+import FishEyeComponent from '@component/ChartG6/FishEye/index'
+import AppleWatchComponent from '@component/ChartF2/AppleWatch/index'
+import FunnelComponent from '@component/ChartF2/Funnel/index'
+import RadarComponent from '@component/ChartF2/Radar/index'
 
 export default class ListIndex extends Component {
   componentDidMount() {

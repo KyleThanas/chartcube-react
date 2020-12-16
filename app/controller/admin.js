@@ -17,25 +17,21 @@ module.exports = app => {
 
     async inspire() {
       const { ctx } = this;
-      console.log('ctx: ', ctx);
       await ctx.renderClient('inspire.js', {});
     }
 
     async chart() {
       const { ctx } = this;
-      console.log('ctx: ', ctx);
       await ctx.renderClient('chart.js', {});
     }
 
     async map() {
       const { ctx } = this;
-      console.log('ctx: ', ctx);
       await ctx.renderClient('map.js', {});
     }
 
     async x6() {
       const { ctx } = this;
-      console.log('ctx: ', ctx);
       await ctx.renderClient('x6.js', {});
     }
   };

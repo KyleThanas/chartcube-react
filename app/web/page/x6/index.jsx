@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import FlowComponent from '../../component/ChartX6/Flow/index'
+import FlowComponent from '@component/ChartX6/Flow/index'
 
 export default class ListIndex extends Component {
   componentDidMount() {

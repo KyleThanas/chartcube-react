@@ -87,7 +87,7 @@ export default class Header extends Component {
     // 初始化画布
     const graph = new Graph({
       grid: true,
-      container: document.getElementById('container'),
+      container: document.getElementById('containerFlow'),
       onPortRendered(args) {
         // console.log(args)
         const port = args.port
@@ -401,7 +401,7 @@ export default class Header extends Component {
 
   render() {
     return <Fragment>
-      <div id="containerFlow"></div>
+      <div id="containerFlow" style={{height: '600px'}}></div>
     </Fragment>
 
   }
