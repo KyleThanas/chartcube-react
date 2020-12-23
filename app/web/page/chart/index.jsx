@@ -3,6 +3,7 @@ import BarComponent from '@component/ChartG2/Bar/index'
 import PieComponent from '@component/ChartG2/Pie/index'
 import TreeComponent from '@component/ChartG6/Tree/index'
 import LineComponent from '@component/ChartG2Plot/Line/index'
+import TrendComponent from '@component/ChartG2Plot/Trend/index'
 import FructhermanComponent from '@component/ChartG6/Fructherman/index'
 import FishEyeComponent from '@component/ChartG6/FishEye/index'
 import AppleWatchComponent from '@component/ChartF2/AppleWatch/index'
@@ -31,6 +32,8 @@ export default class ListIndex extends Component {
       <TreeComponent />
       <FructhermanComponent />
       <FishEyeComponent />
+      <h1>G2Plot:便捷的关系数据可视化引擎与图分析工具。</h1>
+      <TrendComponent />
     </Fragment>;
   }
 }

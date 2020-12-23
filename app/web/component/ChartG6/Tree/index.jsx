@@ -20,10 +20,10 @@ export default class Header extends Component {
             height: h, // 60
             stroke: color,
             radius: r,
-            fill: '#fff',
+            fill: '#fff'
           },
           name: 'main-box',
-          draggable: true,
+          draggable: true
         });
 
         group.addShape('rect', {
@@ -33,10 +33,10 @@ export default class Header extends Component {
             width: w, //200,
             height: h / 2, // 60
             fill: color,
-            radius: [r, r, 0, 0],
+            radius: [r, r, 0, 0]
           },
           name: 'title-box',
-          draggable: true,
+          draggable: true
         });
 
         // title text
@@ -47,9 +47,9 @@ export default class Header extends Component {
             y: -h / 2 + 2,
             lineHeight: 20,
             text: cfg.id,
-            fill: '#fff',
+            fill: '#fff'
           },
-          name: 'title',
+          name: 'title'
         });
         cfg.children &&
           group.addShape('marker', {
@@ -61,9 +61,9 @@ export default class Header extends Component {
               symbol: G6.Marker.collapse,
               stroke: '#666',
               lineWidth: 1,
-              fill: '#fff',
+              fill: '#fff'
             },
-            name: 'collapse-icon',
+            name: 'collapse-icon'
           });
         group.addShape('text', {
           attrs: {
@@ -72,9 +72,9 @@ export default class Header extends Component {
             y: -h / 2 + 24,
             lineHeight: 20,
             text: 'description',
-            fill: 'rgba(0,0,0, 1)',
+            fill: 'rgba(0,0,0, 1)'
           },
-          name: `description`,
+          name: 'description'
         });
         return shape;
       },
@@ -84,7 +84,7 @@ export default class Header extends Component {
           const icon = value ? G6.Marker.expand : G6.Marker.collapse;
           marker.attr('symbol', icon);
         }
-      },
+      }
     });
 
     const data = {
@@ -92,21 +92,21 @@ export default class Header extends Component {
       children: [
         {
           id: 'A1',
-          children: [{ id: 'A11' }, { id: 'A12' }, { id: 'A13' }, { id: 'A14' }],
+          children: [{ id: 'A11' }, { id: 'A12' }, { id: 'A13' }, { id: 'A14' }]
         },
         {
           id: 'A2',
           children: [
             {
               id: 'A21',
-              children: [{ id: 'A211' }, { id: 'A212' }],
+              children: [{ id: 'A211' }, { id: 'A212' }]
             },
             {
-              id: 'A22',
-            },
-          ],
-        },
-      ],
+              id: 'A22'
+            }
+          ]
+        }
+      ]
     };
 
     const container = document.getElementById('container');
@@ -122,13 +122,13 @@ export default class Header extends Component {
       },
       defaultNode: {
         type: 'card-node',
-        size: [100, 40],
+        size: [100, 40]
       },
       defaultEdge: {
         type: 'cubic-horizontal',
         style: {
-          endArrow: true,
-        },
+          endArrow: true
+        }
       },
       layout: {
         type: 'indented',
@@ -137,8 +137,8 @@ export default class Header extends Component {
         indent: 200,
         getHeight: () => {
           return 60;
-        },
-      },
+        }
+      }
     });
 
     graph.data(data);
